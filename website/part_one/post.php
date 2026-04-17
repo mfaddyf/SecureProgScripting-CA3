@@ -2,6 +2,8 @@
 if (isset($_POST['name'])) {
     echo "Hello " . $_POST['name'];
 }
+
+    // simple post request that will reprint the name inputted
 ?>
 
 <h2>POST Form</h2>
