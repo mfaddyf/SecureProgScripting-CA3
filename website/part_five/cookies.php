@@ -24,6 +24,10 @@ if (!isset($_COOKIE['username'])) {
     // next time you refresh the page a new cookie is made
     // refresh again and it is displayed with the user + deleted again
     // done this way for quick demo / easy screenshots rather than waiting for ages
+
+    // ----- references
+    // https://www.w3schools.com/php/php_cookies.asp
+    // https://www.php.net/manual/en/features.cookies.php
 ?>
 
 </body>
