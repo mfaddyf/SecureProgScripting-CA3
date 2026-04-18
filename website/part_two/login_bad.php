@@ -15,7 +15,7 @@ if ($_POST) {
 
 	$u = $_POST['username'];
 	$p = $_POST['password'];
-	
+	// select statement to find the entered user and password
 	$sql = "SELECT * FROM users WHERE username = '$u' AND password = '$p'";
 	
     $result = $pdo->query($sql);
@@ -26,6 +26,9 @@ if ($_POST) {
         echo "Login failed!";
     }
 }
+
+	// https://www.w3schools.com/php/php_mysql_intro.asp
+	// https://www.w3schools.com/php/php_mysql_select.asp
 ?>
 </body>
 </html>
