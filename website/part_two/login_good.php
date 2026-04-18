@@ -19,7 +19,7 @@ if ($_POST) {
         $p = $_POST['password'];
 
         // SECURE: prepared statement (prevents SQL injection
-        // input treated as date only and not actual sql input
+        // input treated as data only and not actual sql input
         $stmt = $pdo->prepare(
             "SELECT * FROM users WHERE username = ? AND password = ?"
         );
@@ -34,6 +34,9 @@ if ($_POST) {
 		}
 	}
 
+	// https://www.w3schools.com/php/php_mysql_select.asp
+	// https://www.w3schools.com/php/php_mysql_prepared_statements.asp
+	
 ?>
 
 </body>
